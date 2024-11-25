@@ -1,0 +1,134 @@
+#age-form {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 15px; /* Add space between input and button */
+}
+
+#age-form input[type="number"] {
+  text-align: center;
+  margin: 0; /* Remove unnecessary margins */
+}
+
+#age-form button {
+  margin: 0; /* Ensure the button aligns properly */
+}
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8f5f9;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2d5f73;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: #546e7a;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction:column;
+
+  gap: 20px;
+}
+
+#questions {
+  display: flex;
+  flex-direction: column; /* Stack questions vertically */
+  gap: 15px; /* Add space between each question */
+}
+
+.question {
+  display: flex;
+  justify-content: space-between; /* Ensure label and input align horizontally */
+  align-items: center; /* Vertically align label and input */
+  padding: 10px;
+  background-color: #f6fbfc; /* Light background for focus */
+  border: 1px solid #cfd8dc; /* Border for definition */
+  border-radius: 8px;
+}
+
+.question label {
+  flex: 2; /* Take up more space for the label */
+  text-align: left; /* Align text to the left for readability */
+  font-size: 1rem;
+  color: #34495e; /* Consistent text color */
+}
+
+.question input[type="number"] {
+  flex: 1; /* Ensure inputs stay smaller relative to the label */
+  max-width: 80px; /* Limit input field size */
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f0f8fa;
+  color: #34495e;
+}
+
+.question input[type="number"]:focus {
+  border-color: #76c7c0; /* Highlight input on focus */
+  background-color: #e0f7f3; /* Subtle focus effect */
+}
+
+#stress-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add space between questions and the submit button */
+  width: 100%; /* Ensure the form takes full container width */
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cfd8dc;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #76c7c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5baaa5;
+}
+
+.hidden {
+  display: none;
+}
+
+#results ul {
+  list-style: none;
+  padding: 0;
+}
+
+#results ul li {
+  margin-bottom: 10px;
+}
